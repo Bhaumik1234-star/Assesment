@@ -1,4 +1,0 @@
-''' This program asks how many of each type of pizza should be ordered and then prints out the orders, skipping any pizzas that weren't ordered '''
-eat = int(input(f'How many cheese pizza do we want? '))
-
-
