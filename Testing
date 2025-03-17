@@ -1,0 +1,8 @@
+password = int(input('Enter a password: '))
+x = (password)
+x = len(x)
+print(x)
+if password > 5:
+    print('Thank you, your password is good enough.')
+else:
+    print('No, this password is not good enough.')
