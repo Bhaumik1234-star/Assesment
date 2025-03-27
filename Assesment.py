@@ -1,39 +1,42 @@
 ''' This program asks to figure which dugeons are safe to explore and if power level is less than 12 or equal to 12 its mean safe
 and if the power level is more than 12 its mean its not safe'''
 
+#List to store the results
+results_list = []
 
-def get_valid_dugeon_level():
-    while True:
-        try:
-            level = int(input('Enter the dugeon level: '))
-            if level > 0:
-                return level
-            else:
-                print('Invalid input. The dungeon level must be a positive integer.')
-
-        except ValueError:
-             print("Invalid input. Please enter a positive integer.")
-
-def main():
-    party_level = 12 
-    dugeonus = []
-
-    while True:
-        dugeonus_name = input('Enter the dugeons name: ')
-        dugeonus_level = get_valid_dugeouns_level()
-        dugeonus.append((dugeonus_name, dugeonus_level))
-
-        if dugeon_name == "Delfino Square":
-             break
-
-    for dugeonus, level in dugeonus:
-        if level <= party_level:
-            print(f'We can fearlessly explore {dugeonus}')
+#Start a loop to print dungeons names and levels 
+while True:
+    #Ask the user to write the dungeon name
+    dugeon_name = input('Enter the dungeon name: ')
+    
+    if dugeon_name == 'Delfino Square':
+        #Ask the user to write the dungeon level
+        dugeon_level = int(input('Enter the dungeon level: '))
+        
+        #Check if the level is 12 or lower and store the results
+        if dugeon_level <= 12:
+            results_list.append(f'We can fearlessly explore {dugeon_name}')
         else:
-            (f'We cannot fearlessly explore {dugeonus}')
+            results_list.append(f'We cannot fearlessly explore {dugeon_name}')
+        #Break the loop after Delfino Square     
+        break
+    #For other dungeons
+    dugeon_level = int(input('Enter the dungeon level: '))
+    
+    #Check if the level is 12 or lower and store the results 
+    if dugeon_level <= 12:
+        results_list.append(f'We can fearlessly explore {dugeon_name}')
+    else:
+        results_list.append(f'We cannot fearlessly explore {dugeon_name}')
+        
+#After the loop ends print each results
+for result in results_list:        
+    print(result)
 
-if __name__ == "__main__":
-    main()
+
+
+
+
 
 
     
