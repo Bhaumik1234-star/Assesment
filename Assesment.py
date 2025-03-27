@@ -15,9 +15,9 @@ while True:
         
         #Check if the level is 12 or lower and store the results
         if dugeon_level <= 12:
-            results_list.append(f'We can fearlessly explore {dugeon_name}')
+            results_list.append(f'We can fearlessly explore {dugeon_name}.')
         else:
-            results_list.append(f'We cannot fearlessly explore {dugeon_name}')
+            results_list.append(f'We cannot fearlessly explore {dugeon_name}.')
         #Break the loop after Delfino Square     
         break
     #For other dungeons
@@ -25,9 +25,9 @@ while True:
     
     #Check if the level is 12 or lower and store the results 
     if dugeon_level <= 12:
-        results_list.append(f'We can fearlessly explore {dugeon_name}')
+        results_list.append(f'We can fearlessly explore {dugeon_name}.')
     else:
-        results_list.append(f'We cannot fearlessly explore {dugeon_name}')
+        results_list.append(f'We cannot fearlessly explore {dugeon_name}.')
         
 #After the loop ends print each results
 for result in results_list:        
